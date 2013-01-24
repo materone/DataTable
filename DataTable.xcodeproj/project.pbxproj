@@ -28,6 +28,10 @@
 		EA7A6C7216B16063009A0603 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA7A6C4516B16063009A0603 /* CoreData.framework */; };
 		EA7A6C7A16B16063009A0603 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA7A6C7816B16063009A0603 /* InfoPlist.strings */; };
 		EA7A6C7D16B16063009A0603 /* DataTableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7A6C7C16B16063009A0603 /* DataTableTests.m */; };
+		EA7A6C8816B19F05009A0603 /* pic1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EA7A6C8716B19F05009A0603 /* pic1.jpg */; };
+		EA7A6C8A16B19F1D009A0603 /* pic2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EA7A6C8916B19F1D009A0603 /* pic2.jpg */; };
+		EA7A6C8C16B1A59B009A0603 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA7A6C8B16B1A59B009A0603 /* QuartzCore.framework */; };
+		EA7A6C8E16B1A950009A0603 /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = EA7A6C8D16B1A950009A0603 /* Default-Portrait@2x~ipad.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +72,10 @@
 		EA7A6C7916B16063009A0603 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EA7A6C7B16B16063009A0603 /* DataTableTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataTableTests.h; sourceTree = "<group>"; };
 		EA7A6C7C16B16063009A0603 /* DataTableTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataTableTests.m; sourceTree = "<group>"; };
+		EA7A6C8716B19F05009A0603 /* pic1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = pic1.jpg; path = ../../../Downloads/pic1.jpg; sourceTree = "<group>"; };
+		EA7A6C8916B19F1D009A0603 /* pic2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = pic2.jpg; path = ../../../Downloads/pic2.jpg; sourceTree = "<group>"; };
+		EA7A6C8B16B1A59B009A0603 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		EA7A6C8D16B1A950009A0603 /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA7A6C8C16B1A59B009A0603 /* QuartzCore.framework in Frameworks */,
 				EA7A6C4016B16063009A0603 /* UIKit.framework in Frameworks */,
 				EA7A6C4216B16063009A0603 /* Foundation.framework in Frameworks */,
 				EA7A6C4416B16063009A0603 /* CoreGraphics.framework in Frameworks */,
@@ -99,6 +108,8 @@
 		EA7A6C3016B16063009A0603 = {
 			isa = PBXGroup;
 			children = (
+				EA7A6C8D16B1A950009A0603 /* Default-Portrait@2x~ipad.png */,
+				EA7A6C8B16B1A59B009A0603 /* QuartzCore.framework */,
 				EA7A6C4716B16063009A0603 /* DataTable */,
 				EA7A6C7516B16063009A0603 /* DataTableTests */,
 				EA7A6C3E16B16063009A0603 /* Frameworks */,
@@ -138,7 +149,9 @@
 				EA7A6C6316B16063009A0603 /* org_chufanMasterViewController.m */,
 				EA7A6C6516B16063009A0603 /* org_chufanDetailViewController.h */,
 				EA7A6C6616B16063009A0603 /* org_chufanDetailViewController.m */,
+				EA7A6C8716B19F05009A0603 /* pic1.jpg */,
 				EA7A6C5F16B16063009A0603 /* DataTable.xcdatamodeld */,
+				EA7A6C8916B19F1D009A0603 /* pic2.jpg */,
 				EA7A6C4816B16063009A0603 /* Supporting Files */,
 			);
 			path = DataTable;
@@ -187,6 +200,7 @@
 				EA7A6C3716B16063009A0603 /* Sources */,
 				EA7A6C3816B16063009A0603 /* Frameworks */,
 				EA7A6C3916B16063009A0603 /* Resources */,
+				EA7A6C8616B16078009A0603 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -255,6 +269,9 @@
 				EA7A6C5816B16063009A0603 /* Default-568h@2x.png in Resources */,
 				EA7A6C5B16B16063009A0603 /* MainStoryboard_iPhone.storyboard in Resources */,
 				EA7A6C5E16B16063009A0603 /* MainStoryboard_iPad.storyboard in Resources */,
+				EA7A6C8816B19F05009A0603 /* pic1.jpg in Resources */,
+				EA7A6C8A16B19F1D009A0603 /* pic2.jpg in Resources */,
+				EA7A6C8E16B1A950009A0603 /* Default-Portrait@2x~ipad.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +298,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		EA7A6C8616B16078009A0603 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export CODESIGN_ALLOCATE=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate\nif [ \"${PLATFORM_NAME}\" == \"iphoneos\" ] || [ \"${PLATFORM_NAME}\" == \"ipados\" ]; then\n/Applications/Xcode.app/Contents/Developer/iphoneentitlements/gen_entitlements.py \"my.company.${PROJECT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\";\ncodesign -f -s \"iPhone Developer\" --entitlements \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -406,9 +436,11 @@
 		EA7A6C8116B16063009A0603 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DataTable/DataTable-Prefix.pch";
 				INFOPLIST_FILE = "DataTable/DataTable-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -417,9 +449,11 @@
 		EA7A6C8216B16063009A0603 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DataTable/DataTable-Prefix.pch";
 				INFOPLIST_FILE = "DataTable/DataTable-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
