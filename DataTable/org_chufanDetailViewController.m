@@ -78,8 +78,7 @@
 #pragma mark - Touch Event Method
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
     UITouch *touch=[[event allTouches]anyObject];
-    CGPoint touchLocation = [touch locationInView:self.view];
-    
+    oriPoint = [touch locationInView:self.view];
     if([touch view] == image){
         //do enlarge
         if([touch tapCount] == 2){
@@ -95,9 +94,12 @@
             return;
         }
         //image.center = touchLocation;
-    }else if([touch view] == image2){
+    }
+    /*
+     else if([touch view] == image2){
         image2.center = touchLocation;
     }
+     */
 }
 
 -(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event{
@@ -105,7 +107,17 @@
     CGPoint touchLocation = [touch locationInView:self.view];
     
     if([touch view] == image){
-       image.center = touchLocation;
+       //image.center = touchLocation;
+        CGPoint curr_point=[touch locationInView:self.view];
+        
+        //分别计算x，和y方向上的移动
+        
+        offsetX=curr_point.x-oriPoint.x;        
+        offsetY=curr_point.y-oriPoint.y;
+                 
+        [self moveToX:offsetX ToY:offsetY];            
+         oriPoint.x=curr_point.x;
+         oriPoint.y=curr_point.y;
     }else if([touch view] == image2){
         image2.center = touchLocation;
     }
@@ -138,5 +150,46 @@
 
 -(void)endWiggle:(NSTimer *)timer{
     [((CALayer*)timer.userInfo)removeAllAnimations];
+}
+
+-(void)moveToX:(CGFloat)x ToY:(CGFloat)y{
+    
+    //计算移动后的矩形框，原点x,y坐标，矩形宽高
+    
+    CGFloat destX,destY,destW,destH;
+    
+    curr_X=destX=curr_X-x;
+    
+    curr_Y=destY=curr_Y-y;
+    
+    destW=self.view.frame.size.width;
+    
+    destH=self.view.frame.size.height;
+    
+    if (destX<0) {//左边界越界处理        
+        curr_X=destX=0;
+        
+    }
+    
+    if (destY<0) {//上边界越界处理        
+        curr_Y=destY=0;
+        
+    }
+    
+    if (destX+destW>image.image.size.width) {//右边界越界处理        
+        curr_X=destX=image.image.size.width-destW;        
+    }
+    
+    if (destY+destH>image.image.size.height) {//右边界越界处理        
+        curr_Y=destY=image.image.size.height-destH;        
+    }
+    
+    //创建矩形框为本fame
+    
+    CGRect rect = CGRectMake(destX, destY,self.view.frame.size.width, self.view.frame.size.height);        
+    image.image=[UIImage imageWithCGImage:CGImageCreateWithImageInRect([image.image CGImage], rect)];
+    
+    
+    
 }
 @end

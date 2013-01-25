@@ -14,6 +14,9 @@
     IBOutlet UIImageView *image2;
     IBOutlet UITextField *duration;
     BOOL flag ;
+    CGPoint oriPoint;
+    CGFloat offsetX,offsetY;//移动时x,y方向上的偏移量
+    CGFloat curr_X,curr_Y;//现在截取的图片内容的原点坐标
 }
 
 @property (strong, nonatomic) id detailItem;
@@ -23,4 +26,5 @@
 -(void)doWiggle:(UIView*)touchView;
 -(void)endWiggle:(NSTimer*)timer;
 -(IBAction)endInput:(id)sender;
+-(void)moveToX:(CGFloat)x ToY:(CGFloat)y;
 @end
