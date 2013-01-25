@@ -13,7 +13,7 @@
     IBOutlet UIImageView *image;
     IBOutlet UIImageView *image2;
     IBOutlet UITextField *duration;
-    BOOL flag;
+    BOOL flag ;
 }
 
 @property (strong, nonatomic) id detailItem;

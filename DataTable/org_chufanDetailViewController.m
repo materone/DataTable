@@ -45,6 +45,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    flag = YES;
     [self configureView];
 }
 
@@ -75,7 +76,7 @@
 }
 
 #pragma mark - Touch Event Method
--(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event{
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
     UITouch *touch=[[event allTouches]anyObject];
     CGPoint touchLocation = [touch locationInView:self.view];
     
@@ -93,7 +94,18 @@
             }
             return;
         }
-        image.center = touchLocation;
+        //image.center = touchLocation;
+    }else if([touch view] == image2){
+        image2.center = touchLocation;
+    }
+}
+
+-(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event{
+    UITouch *touch=[[event allTouches]anyObject];
+    CGPoint touchLocation = [touch locationInView:self.view];
+    
+    if([touch view] == image){
+       image.center = touchLocation;
     }else if([touch view] == image2){
         image2.center = touchLocation;
     }
@@ -102,7 +114,7 @@
 -(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event{
     UITouch *touch = [[event allTouches]anyObject];
     if([touch view] == image ||[touch view] == image2){
-        [self doWiggle:[touch view]];
+        //[self doWiggle:[touch view]];
     }
 }
 
