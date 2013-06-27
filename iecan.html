@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>  
+<html>  
+<head><title>深度剖析IE10对HTML5 Canvas支持及实例教程</title></head>  
+<body>  
+深度剖析IE10对HTML5 Canvas支持及实例教程<br>  
+<canvas id="myCanvas" width="600" height="600">your browser does not support the canvas tag </canvas>  
+  
+<script type="text/javascript">  
+  
+var canvas=document.getElementById('myCanvas');  
+var ctx=canvas.getContext('2d');  
+ctx.fillStyle='#E0E0E0';  
+//ctx.fillRect(0,0,400,400); 
+ctx.font="60px Georgia";
+ctx.fillText("This is a test",10,90);
+
+ctx.moveTo(100,100);
+ctx.lineTo(100,200);
+ctx.lineTo(200,200);
+ctx.lineTo(200,100);
+ctx.lineTo(100,100);
+ctx.stroke();
+
+ctx.moveTo(200,200);
+for(var i=0;i<=50;i++){	
+	var x=200+i;	
+	var y=200-Math.sqrt(2500-i*i);	
+	if(i==0){
+		alert("The x,y="+x+":"+y);
+	}
+	ctx.lineTo(x,y);
+}
+ctx.lineTo(200,200);
+ctx.lineTo(100,100);
+ctx.stroke();
+  
+</script>  
+  
+</body>  
+</html>  
