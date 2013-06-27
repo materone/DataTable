@@ -7,7 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "org_chufanDetailViewController.h"
+#import "Global.h"
+@interface org_chufanFanViewController : UIViewController{
+    IBOutlet UITextField *txtName;
+}
+@property (strong, nonatomic) IBOutlet UISwitch *btnInfoTog;
 
-@interface org_chufanFanViewController : UIViewController
+@property (nonatomic,retain) UITextField *txtName;
+- (IBAction)setInfoBtn:(id)sender;
 
+-(IBAction)finshEnterTxt:(id)sender;
+-(IBAction)closeBack:(id)sender;
+-(IBAction)showMess:(id)sender;
 @end

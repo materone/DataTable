@@ -9,12 +9,15 @@
 #import "org_chufanDetailViewController.h"
 #import <QuartzCore/QuartzCore.h>
 
+
 @interface org_chufanDetailViewController ()
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
 - (void)configureView;
 @end
 
 @implementation org_chufanDetailViewController
+
+@synthesize btnInfo;
 
 #pragma mark - Managing the detail item
 
@@ -47,6 +50,11 @@
 	// Do any additional setup after loading the view, typically from a nib.
     flag = YES;
     [self configureView];
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [btnInfo setEnabled:[Global sharedInstance].togInfoBtn];
 }
 
 - (void)didReceiveMemoryWarning
@@ -119,6 +127,8 @@
          oriPoint.x=curr_point.x;
          oriPoint.y=curr_point.y;
     }else if([touch view] == image2){
+        CGPoint pInView = [touch locationInView:image2];
+        NSLog(@"x:%f y:%f",pInView.x,pInView.y);
         image2.center = touchLocation;
     }
 }
@@ -191,5 +201,32 @@
     
     
     
+}
+
+#pragma mark - Delegate Action
+-(void)addPlayerDidDone:(org_chufanAddPlayerDetailViewController*) control{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+-(void)addPlayerDidCancel:(org_chufanAddPlayerDetailViewController *)control{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if([segue.identifier isEqualToString:@"AddPlayer"]||[segue.identifier isEqualToString:@"Limon"]){
+        UINavigationController *nav = segue.destinationViewController;
+        org_chufanAddPlayerDetailViewController *addplay = [[nav viewControllers] objectAtIndex:0];
+		addplay.delegate = self; 
+    }
+}
+-(IBAction)altInfo:(id)sender{
+    UIAlertView *alt = [[UIAlertView alloc]initWithTitle:@"Some Info" message:@"Hello \nWhat I lean is a quit" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:@"Did", nil];
+    [alt show];
+}
+- (IBAction)togInfoButton:(id)sender {
+    [btnInfo setEnabled:[Global sharedInstance].togInfoBtn];
+    [Global sharedInstance].togInfoBtn = ![Global sharedInstance].togInfoBtn;
+}
+- (void)viewDidUnload {
+    [self setBtnInfo:nil];
+    [super viewDidUnload];
 }
 @end

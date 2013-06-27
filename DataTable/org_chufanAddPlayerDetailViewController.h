@@ -8,6 +8,19 @@
 
 #import <UIKit/UIKit.h>
 
-@interface org_chufanAddPlayerDetailViewController : UITableViewController
+@class org_chufanAddPlayerDetailViewController;
 
+@protocol AddPlayerDetailDelegage <NSObject>
+-(void)addPlayerDidDone:(org_chufanAddPlayerDetailViewController*) control;
+-(void)addPlayerDidCancel:(org_chufanAddPlayerDetailViewController *)control;
+@end
+
+@interface org_chufanAddPlayerDetailViewController : UITableViewController
+@property (strong, nonatomic) IBOutlet UITextField *nameTextField;
+@property (strong, nonatomic) IBOutlet UILabel *detailLable;
+
+@property (nonatomic,weak) id<AddPlayerDetailDelegage> delegate;
+
+-(IBAction)didDone:(id)sender;
+-(IBAction)didCancel:(id)sender;
 @end

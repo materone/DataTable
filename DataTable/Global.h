@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Global : NSObject
-
+@interface Global : NSObject{
+    BOOL togInfoBtn ;
+}
+@property (nonatomic) BOOL togInfoBtn;
++(Global*)sharedInstance;
 @end

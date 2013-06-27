@@ -7,8 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA0463261721BB31008DDAFB /* org_chufanAddPlayerDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA0463251721BB31008DDAFB /* org_chufanAddPlayerDetailViewController.m */; };
 		EA0A5B1516B1BC8400FF0233 /* pic2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EA0A5B1416B1BC8400FF0233 /* pic2.jpg */; };
 		EA0A5B1716B1BCA500FF0233 /* pic1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EA0A5B1616B1BCA500FF0233 /* pic1.jpg */; };
+		EA2FC4C3171DBBA600C28CDF /* org.chufanFanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2FC4C2171DBBA600C28CDF /* org.chufanFanViewController.m */; };
+		EA77FF751723B8B7009FDC1C /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA77FF741723B8B7009FDC1C /* Icon@2x.png */; };
+		EA77FF771723B8BC009FDC1C /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EA77FF761723B8BC009FDC1C /* Icon.png */; };
+		EA77FF791723B924009FDC1C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA77FF781723B924009FDC1C /* Default@2x.png */; };
+		EA77FF7D1723E1D9009FDC1C /* Global.m in Sources */ = {isa = PBXBuildFile; fileRef = EA77FF7C1723E1D9009FDC1C /* Global.m */; };
 		EA7A6C4016B16063009A0603 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA7A6C3F16B16063009A0603 /* UIKit.framework */; };
 		EA7A6C4216B16063009A0603 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA7A6C4116B16063009A0603 /* Foundation.framework */; };
 		EA7A6C4416B16063009A0603 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA7A6C4316B16063009A0603 /* CoreGraphics.framework */; };
@@ -17,7 +23,6 @@
 		EA7A6C4E16B16063009A0603 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7A6C4D16B16063009A0603 /* main.m */; };
 		EA7A6C5216B16063009A0603 /* org_chufanAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7A6C5116B16063009A0603 /* org_chufanAppDelegate.m */; };
 		EA7A6C5416B16063009A0603 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = EA7A6C5316B16063009A0603 /* Default.png */; };
-		EA7A6C5616B16063009A0603 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA7A6C5516B16063009A0603 /* Default@2x.png */; };
 		EA7A6C5816B16063009A0603 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA7A6C5716B16063009A0603 /* Default-568h@2x.png */; };
 		EA7A6C5B16B16063009A0603 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA7A6C5916B16063009A0603 /* MainStoryboard_iPhone.storyboard */; };
 		EA7A6C5E16B16063009A0603 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA7A6C5C16B16063009A0603 /* MainStoryboard_iPad.storyboard */; };
@@ -32,6 +37,7 @@
 		EA7A6C7D16B16063009A0603 /* DataTableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7A6C7C16B16063009A0603 /* DataTableTests.m */; };
 		EA7A6C8C16B1A59B009A0603 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA7A6C8B16B1A59B009A0603 /* QuartzCore.framework */; };
 		EA7A6C8E16B1A950009A0603 /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = EA7A6C8D16B1A950009A0603 /* Default-Portrait@2x~ipad.png */; };
+		EA8639CD17244EE300A4F5E7 /* GamePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA8639CC17244EE300A4F5E7 /* GamePickerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,8 +51,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EA0463241721BB31008DDAFB /* org_chufanAddPlayerDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = org_chufanAddPlayerDetailViewController.h; sourceTree = "<group>"; };
+		EA0463251721BB31008DDAFB /* org_chufanAddPlayerDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = org_chufanAddPlayerDetailViewController.m; sourceTree = "<group>"; };
 		EA0A5B1416B1BC8400FF0233 /* pic2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic2.jpg; sourceTree = "<group>"; };
 		EA0A5B1616B1BCA500FF0233 /* pic1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic1.jpg; sourceTree = "<group>"; };
+		EA2FC4C1171DBBA600C28CDF /* org.chufanFanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = org.chufanFanViewController.h; sourceTree = "<group>"; };
+		EA2FC4C2171DBBA600C28CDF /* org.chufanFanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = org.chufanFanViewController.m; sourceTree = "<group>"; };
+		EA77FF741723B8B7009FDC1C /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "../Icon@2x.png"; sourceTree = "<group>"; };
+		EA77FF761723B8BC009FDC1C /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../Icon.png; sourceTree = "<group>"; };
+		EA77FF781723B924009FDC1C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
+		EA77FF7B1723E1D9009FDC1C /* Global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
+		EA77FF7C1723E1D9009FDC1C /* Global.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Global.m; sourceTree = "<group>"; };
 		EA7A6C3B16B16063009A0603 /* DataTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA7A6C3F16B16063009A0603 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EA7A6C4116B16063009A0603 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -59,7 +74,6 @@
 		EA7A6C5016B16063009A0603 /* org_chufanAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = org_chufanAppDelegate.h; sourceTree = "<group>"; };
 		EA7A6C5116B16063009A0603 /* org_chufanAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = org_chufanAppDelegate.m; sourceTree = "<group>"; };
 		EA7A6C5316B16063009A0603 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		EA7A6C5516B16063009A0603 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		EA7A6C5716B16063009A0603 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		EA7A6C5A16B16063009A0603 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		EA7A6C5D16B16063009A0603 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
@@ -75,7 +89,9 @@
 		EA7A6C7B16B16063009A0603 /* DataTableTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataTableTests.h; sourceTree = "<group>"; };
 		EA7A6C7C16B16063009A0603 /* DataTableTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataTableTests.m; sourceTree = "<group>"; };
 		EA7A6C8B16B1A59B009A0603 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		EA7A6C8D16B1A950009A0603 /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
+		EA7A6C8D16B1A950009A0603 /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Portrait@2x~ipad.png"; path = "../Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
+		EA8639CB17244EE300A4F5E7 /* GamePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamePickerViewController.h; sourceTree = "<group>"; };
+		EA8639CC17244EE300A4F5E7 /* GamePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamePickerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,8 +124,6 @@
 		EA7A6C3016B16063009A0603 = {
 			isa = PBXGroup;
 			children = (
-				EA7A6C8D16B1A950009A0603 /* Default-Portrait@2x~ipad.png */,
-				EA7A6C8B16B1A59B009A0603 /* QuartzCore.framework */,
 				EA7A6C4716B16063009A0603 /* DataTable */,
 				EA7A6C7516B16063009A0603 /* DataTableTests */,
 				EA7A6C3E16B16063009A0603 /* Frameworks */,
@@ -129,6 +143,7 @@
 		EA7A6C3E16B16063009A0603 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EA7A6C8B16B1A59B009A0603 /* QuartzCore.framework */,
 				EA7A6C3F16B16063009A0603 /* UIKit.framework */,
 				EA7A6C4116B16063009A0603 /* Foundation.framework */,
 				EA7A6C4316B16063009A0603 /* CoreGraphics.framework */,
@@ -149,10 +164,16 @@
 				EA7A6C6316B16063009A0603 /* org_chufanMasterViewController.m */,
 				EA7A6C6516B16063009A0603 /* org_chufanDetailViewController.h */,
 				EA7A6C6616B16063009A0603 /* org_chufanDetailViewController.m */,
-				EA0A5B1616B1BCA500FF0233 /* pic1.jpg */,
-				EA0A5B1416B1BC8400FF0233 /* pic2.jpg */,
 				EA7A6C5F16B16063009A0603 /* DataTable.xcdatamodeld */,
 				EA7A6C4816B16063009A0603 /* Supporting Files */,
+				EA2FC4C1171DBBA600C28CDF /* org.chufanFanViewController.h */,
+				EA2FC4C2171DBBA600C28CDF /* org.chufanFanViewController.m */,
+				EA0463241721BB31008DDAFB /* org_chufanAddPlayerDetailViewController.h */,
+				EA0463251721BB31008DDAFB /* org_chufanAddPlayerDetailViewController.m */,
+				EA77FF7B1723E1D9009FDC1C /* Global.h */,
+				EA77FF7C1723E1D9009FDC1C /* Global.m */,
+				EA8639CB17244EE300A4F5E7 /* GamePickerViewController.h */,
+				EA8639CC17244EE300A4F5E7 /* GamePickerViewController.m */,
 			);
 			path = DataTable;
 			sourceTree = "<group>";
@@ -160,12 +181,17 @@
 		EA7A6C4816B16063009A0603 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EA77FF781723B924009FDC1C /* Default@2x.png */,
+				EA77FF761723B8BC009FDC1C /* Icon.png */,
+				EA77FF741723B8B7009FDC1C /* Icon@2x.png */,
+				EA0A5B1616B1BCA500FF0233 /* pic1.jpg */,
+				EA7A6C8D16B1A950009A0603 /* Default-Portrait@2x~ipad.png */,
+				EA0A5B1416B1BC8400FF0233 /* pic2.jpg */,
 				EA7A6C4916B16063009A0603 /* DataTable-Info.plist */,
 				EA7A6C4A16B16063009A0603 /* InfoPlist.strings */,
 				EA7A6C4D16B16063009A0603 /* main.m */,
 				EA7A6C4F16B16063009A0603 /* DataTable-Prefix.pch */,
 				EA7A6C5316B16063009A0603 /* Default.png */,
-				EA7A6C5516B16063009A0603 /* Default@2x.png */,
 				EA7A6C5716B16063009A0603 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
@@ -265,13 +291,15 @@
 			files = (
 				EA7A6C4C16B16063009A0603 /* InfoPlist.strings in Resources */,
 				EA7A6C5416B16063009A0603 /* Default.png in Resources */,
-				EA7A6C5616B16063009A0603 /* Default@2x.png in Resources */,
 				EA7A6C5816B16063009A0603 /* Default-568h@2x.png in Resources */,
 				EA7A6C5B16B16063009A0603 /* MainStoryboard_iPhone.storyboard in Resources */,
 				EA7A6C5E16B16063009A0603 /* MainStoryboard_iPad.storyboard in Resources */,
 				EA7A6C8E16B1A950009A0603 /* Default-Portrait@2x~ipad.png in Resources */,
 				EA0A5B1516B1BC8400FF0233 /* pic2.jpg in Resources */,
 				EA0A5B1716B1BCA500FF0233 /* pic1.jpg in Resources */,
+				EA77FF751723B8B7009FDC1C /* Icon@2x.png in Resources */,
+				EA77FF771723B8BC009FDC1C /* Icon.png in Resources */,
+				EA77FF791723B924009FDC1C /* Default@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +352,10 @@
 				EA7A6C6116B16063009A0603 /* DataTable.xcdatamodeld in Sources */,
 				EA7A6C6416B16063009A0603 /* org_chufanMasterViewController.m in Sources */,
 				EA7A6C6716B16063009A0603 /* org_chufanDetailViewController.m in Sources */,
+				EA2FC4C3171DBBA600C28CDF /* org.chufanFanViewController.m in Sources */,
+				EA0463261721BB31008DDAFB /* org_chufanAddPlayerDetailViewController.m in Sources */,
+				EA77FF7D1723E1D9009FDC1C /* Global.m in Sources */,
+				EA8639CD17244EE300A4F5E7 /* GamePickerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

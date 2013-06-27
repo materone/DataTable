@@ -7,12 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Global.h"
+#import "org_chufanAddPlayerDetailViewController.h";
 
-@interface org_chufanDetailViewController : UIViewController <UISplitViewControllerDelegate>
+@interface org_chufanDetailViewController : UIViewController <UISplitViewControllerDelegate,AddPlayerDetailDelegage>
 {
     IBOutlet UIImageView *image;
     IBOutlet UIImageView *image2;
     IBOutlet UITextField *duration;
+    IBOutlet UIButton *btnInfo;
     BOOL flag ;
     CGPoint oriPoint;
     CGFloat offsetX,offsetY;//移动时x,y方向上的偏移量
@@ -20,8 +23,12 @@
 }
 
 @property (strong, nonatomic) id detailItem;
+- (IBAction)togInfoButton:(id)sender;
 
 @property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+@property (strong, nonatomic) IBOutlet UIButton *btnInfo;
+
+- (IBAction)altInfo:(id)sender;
 
 -(void)doWiggle:(UIView*)touchView;
 -(void)endWiggle:(NSTimer*)timer;

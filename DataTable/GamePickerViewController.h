@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GamePickerViewController : UITableViewController
+@interface GamePickerViewController : UITableViewController{
+    NSArray *games;
+}
 
 @end

@@ -10,4 +10,16 @@
 
 @implementation Global
 
+@synthesize togInfoBtn;
+
+static Global *myGlobal = nil;
+
++(Global*) sharedInstance{
+    if(myGlobal == nil){
+        myGlobal = [[self alloc] init];
+        myGlobal.togInfoBtn = FALSE;
+    }
+    return myGlobal;
+}
+
 @end

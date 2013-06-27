@@ -12,6 +12,7 @@
 
 @implementation org_chufanAppDelegate
 
+@synthesize togInfoBtn;
 @synthesize managedObjectContext = _managedObjectContext;
 @synthesize managedObjectModel = _managedObjectModel;
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
@@ -32,6 +33,9 @@
         org_chufanMasterViewController *controller = (org_chufanMasterViewController *)navigationController.topViewController;
         controller.managedObjectContext = self.managedObjectContext;
     }
+    
+    togInfoBtn = FALSE;
+    
     return YES;
 }
 							
