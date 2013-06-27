@@ -1,8 +1,10 @@
 <!DOCTYPE HTML>  
 <html>  
-<head><title>深度剖析IE10对HTML5 Canvas支持及实例教程</title></head>  
+<head><title>Untitled Document</title>
+<meta charset="UTF-8">
+</head>  
 <body>  
-深度剖析IE10对HTML5 Canvas支持及实例教程<br>  
+This is a html 5 test<br>  
 <canvas id="myCanvas" width="600" height="600">your browser does not support the canvas tag </canvas>  
   
 <script type="text/javascript">  
@@ -22,17 +24,22 @@ ctx.lineTo(100,100);
 ctx.stroke();
 
 ctx.moveTo(200,200);
-for(var i=0;i<=50;i++){	
-	var x=200+i;	
-	var y=200-Math.sqrt(2500-i*i);	
-	if(i==0){
-		alert("The x,y="+x+":"+y);
-	}
+var p2=2*Math.PI;
+for(var i=0;i<=100;i++){	
+	var x=200+i*p2;	
+	//var y=200-Math.sqrt(2500-i*i);	
+	var y = 200 - 100*Math.sin(i/p2);
 	ctx.lineTo(x,y);
 }
-ctx.lineTo(200,200);
-ctx.lineTo(100,100);
+//ctx.lineTo(200,200);
+//ctx.lineTo(100,100);
 ctx.stroke();
+
+ctx.fillText(getX(),100,400);
+
+function getX(){
+	return "This is a test涓枃";
+}
   
 </script>  
   
